@@ -13,10 +13,14 @@ let url = "https://api.openaq.org/v2/measurements?location_id=275642&parameter=p
 let myData = []; 
 let count = 0; 
 
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 function setup() {
-  createCanvas(500, 500);
-  background(255);
+  // createCanvas(500, 500);
+  var cnv = createCanvas(500, 500);
+  cnv.style('display', 'block');
+  background(100,200,0);
   // perform request
   fetch(url).then(function(response) {
     return response.json();
