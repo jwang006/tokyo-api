@@ -20,7 +20,7 @@ function setup() {
   // createCanvas(500, 500);
   var cnv = createCanvas(500, 500);
   cnv.style('display', 'block');
-  background(100,200,0);
+  background(200);
   // perform request
   fetch(url).then(function(response) {
     return response.json();
