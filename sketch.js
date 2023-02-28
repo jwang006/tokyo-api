@@ -39,7 +39,7 @@ function draw() {
   if (loading) {
     // loading screen
     textSize(30);
-    text("Loading...", 0, height/2-25, width, 50);
+    text("Loading... if it didn't work, please refreash the web", 0, height/2-25, width, 50);
     
   }else{
     
