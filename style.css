@@ -1,14 +1,60 @@
-html, body {
+
+ html, body {
   height: 100%;
+  background-color: white;
 }
 
 body {
-  margin: 0;
+  margin: 10;
+  padding:0 3%;
   display: flex;
-
   /* This centers our sketch horizontally. */
   justify-content: center;
-
   /* This centers our sketch vertically. */
   align-items: center;
+}
+main{
+  margin-right: 10px;
+}
+p{
+  margin: 50px 20;
+}
+h1{
+  /* text-align: center; */
+  margin: 10px 0;
+  /* padding:0 10%; */
+}
+#gui-container{
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+#sketch-container{
+  width: 100%;
+}
+
+.button{
+  background-color: #f6d781;
+  border: solid 0px ;
+  border-radius: 5px;
+  color: white;
+  padding:10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  /* margin: 80%;; */
+  margin-right: auto; 
+  font-size: 16px;
+  min-width: 50px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color:white;
+  color: #f6d781;
+}
+.button.inactive{
+  cursor:default;
+  background-color: lightgray;
+  border-color: lightgray;
+  color: white;
 }

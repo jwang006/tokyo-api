@@ -1,7 +1,7 @@
 
 //From: https://api.openaq.org
 //tokyo - pm api
-
+let canvas;
 let pm25;
 let y = 100;
 let x = 10;
@@ -17,9 +17,9 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 function setup() {
-  // createCanvas(500, 500);
-  var cnv = createCanvas(500, 500);
-  cnv.style('display', 'block');
+  canvas = createCanvas(500, 500);
+  canvas.parent("sketch-container"); 
+
   background(200,200);
   // perform request
   fetch(url).then(function(response) {
